@@ -1,0 +1,43 @@
+.featuredVideosContainer {
+  height: 917px;
+  width: 1920px;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+
+  .sectionForText {
+    width: 768px;
+    height: 50%;
+    margin: 0 577px ;
+
+    h2 {
+      font-family: SFProDisplay;
+      font-size: 64px;
+      line-height: 80px;
+      letter-spacing: 0px;
+      color: #1c2e3d;
+      margin-bottom: 8px ;
+      margin-top: 149px ;
+
+      text-align: center;
+    }
+    p {
+      font-family: SFCompactText;
+      font-size: 16px;
+
+      height: 48px;
+      width: 634px;
+      color: #788692;
+
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .sectionForVideos {
+    width: 768px;
+    height: 50%;
+  }
+}

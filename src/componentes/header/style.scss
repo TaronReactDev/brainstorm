@@ -1,0 +1,155 @@
+.headerContainer {
+  height: 1080px;
+  width: 1920px;
+  position: relative;
+  background-image: url("./jpg/Mask\ Group\ \(5\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .div {
+    height: 1027px;
+    width: 1575px;
+    position: absolute;
+    margin: 53px 176px 0 176px;
+
+    .buyTheBook {
+      border-radius: 8px;
+      height: 80px;
+      width: 274px;
+      color: #ffffff;
+      border-radius: 8px;
+      position: absolute;
+      bottom: 276px;
+      background: #e8594e;
+      font-family: SFProDisplay;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 2.1818180084228516px;
+      text-align: center;
+      border: none;
+    }
+
+    .headerText {
+      color: #ffffff;
+      height: 66px;
+      width: 501px;
+      font-family: SFCompactText;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      position: absolute;
+      bottom: 415px;
+      margin: 0;
+    }
+    .newBook {
+      font-family: SFProDisplay;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      height: 13px;
+      width: 73px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 830px;
+      margin-left: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      height: 252px;
+      width: 614px;
+
+      color: #ffffff;
+
+      font-family: SFProDisplay;
+      font-size: 80px;
+      line-height: 84px;
+      letter-spacing: 0px;
+      text-align: left;
+      position: absolute;
+      bottom: 521px;
+    }
+
+    input {
+      position: absolute;
+      bottom: 0;
+      height: 115px;
+      width: 1066px;
+    }
+    input::placeholder {
+        font-family: SFProDisplay;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #1c2e3d;
+        height: 16px;
+        width: 99px;
+        position: absolute;
+     
+        left: 56px;
+        top:47px
+        
+      }
+    
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  p {
+    height: 26px;
+    width: 123px;
+
+    border-radius: nullpx;
+    font-family: SFProDisplay;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+.burgerMenuItem {
+  height: 2px;
+  width: 48px;
+  background-color: #ffffff;
+  margin: 6px 0 0 0;
+}
+
+.socialLogoDiv {
+  width: 71px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchIcon{
+  position: absolute;
+  bottom: 53px;
+  left: 986px;
+}
+
+.videoSlider{
+height: 120px;
+width: 502px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+background-color: #73AFBA;
+color: #ffffff;
+font-family: SFProDisplay;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 2.1818180084228516px;
+text-align: center;
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+right: 0;
+
+}

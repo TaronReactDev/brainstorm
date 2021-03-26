@@ -1,0 +1,172 @@
+.featuredStoriesContainer {
+  height: 1080px;
+  width: 1920px;
+
+  background-image: url("./jpg/MaskGroup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.informationPart {
+  height: 690px;
+  width: 1242px;
+  position: absolute;
+  top: 390px;
+
+  .featured {
+    height: 48px;
+    width: 132px;
+    position: absolute;
+    left: 176px;
+    bottom: 428px;
+    color: #ffffff;
+    background: #e8594e;
+    border-radius: 24px;
+    border: none;
+    font-family: SFProDisplay;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  h3 {
+    position: absolute;
+    left: 176px;
+    bottom: 284px;
+    width: 634px;
+    height: 128px;
+    font-family: SFProDisplay;
+    font-size: 48px;
+    line-height: 64px;
+    color: #ffffff;
+    margin: 0;
+    font-family: SFProDisplay;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  p {
+    position: absolute;
+    left: 176px;
+    bottom: 226px;
+    width: 634px;
+    height: 42px;
+    font-family: SFCompactText;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    margin: 0;
+    font-family: SFCompactText;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .readArticle {
+    height: 80px;
+    width: 266px;
+    color: #ffffff;
+    position: absolute;
+    left: 176px;
+    bottom: 106px;
+    background: #73afba;
+    border-radius: 8px;
+    border: none;
+    font-family: SFProDisplay;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2.1818180084228516px;
+    text-align: center;
+  }
+}
+
+.featuredStories {
+  width: 678px;
+  height: 100%;
+  position: absolute;
+  left: 1242px;
+  background-color: #3c4a51;
+  opacity: 0.94;
+
+  h2 {
+    height: 160px;
+    width: 368px;
+    color: #ffffff;
+    position: absolute;
+    top: 127px;
+    left: 133px;
+    font-family: SFProDisplay;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .avatarDiv {
+    position: absolute;
+    top: 383px;
+    left: 133px;
+
+    .unicAvatar {
+      display: flex;
+      height: 132px;
+      border-bottom:1px solid #E3E3E3 ;
+
+      img {
+          width: 48px;
+          height: 48px;
+        border-radius: 50%;
+        border: none;
+        margin-top: 32px;
+
+      }
+      span {
+          width: 288px;
+          height: 69px;
+          margin-left: 32px;
+          margin-top: 32px;
+        position: relative;
+        
+        
+        p:nth-child(1) {
+        height: 48px;
+        width: 280px;
+       
+        
+
+        font-family: SFProDisplay;
+        font-size: 18px;
+        line-height: 24px;
+
+        color: #ffffff;
+        margin: 0 ;
+
+      }
+
+
+      p:nth-child(2){
+        height: 13px;
+        
+        position: absolute;
+        bottom:0;
+        font-family: SFProText;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 0;
+        color: #E3E3E3;
+                
+      }
+    }
+
+
+    }
+  }
+}

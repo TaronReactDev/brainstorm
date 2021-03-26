@@ -1,0 +1,106 @@
+.signUpContainer {
+  width: 1569px;
+  height: 894px;
+  margin: 0 177px 158px 174px;
+  position: relative;
+
+
+  .background {
+    /* aleks-dahlberg-Vvje-a4hI1k-unsplash 1 */
+
+    position: absolute;
+    width: 1569px;
+    height: 798px;
+
+    background: url("./jpg/aleks-dahlberg-Vvje-a4hI1k-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    div {
+      width: 368px;
+      height: 284px;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: absolute;
+      top: 336px;
+      left: 135px;
+      .p1 {
+        text-transform: uppercase;
+        font-family: SFProDisplay;
+        margin: 0;
+        padding: 0;
+        font-size: 64px;
+        line-height: 80px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+      p {
+        font-family: SFCompactText;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  //formContainer
+  .formContainer {
+    position: absolute;
+    width: 501px;
+    height: 320px;
+    left: 935px;
+    top: 478px;
+    background: #ffffff;
+    border-radius: 8px 8px 0px 0px;
+    form {
+      width: 357px;
+      height: 178px;
+      display: flex;
+      flex-direction: column;
+      margin: 76px 72px 66px 72px;
+    }
+
+    label {
+      font-family: SFProDisplay;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #1c2e3d;
+      text-transform: uppercase;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #1c2e3d;
+      width: 357px;
+      height: 24px;
+      margin: 0 auto;
+    }
+
+    button {
+      position: absolute;
+      width: 501px;
+      height: 96px;
+      top: 321px;
+      border: none;
+
+      background: #73afba;
+      border-radius: 0px 0px 8px 8px;
+      > p {
+        font-family: SFProDisplay;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2.1818180084228516px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+  }
+}
