@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import Video from "./video/ex.mp4"
 
 export default function index() {
   return (
@@ -7,7 +8,8 @@ export default function index() {
       <div className="div">
         <nav>
           <div className="socialLogoDiv">
-            <svg
+           <a href="https://www.facebook.com/">
+           <svg
               width="11"
               height="20"
               viewBox="0 0 11 20"
@@ -21,7 +23,8 @@ export default function index() {
                 fill="white"
               />
             </svg>
-            <svg
+           </a>
+           <a href="https://www.twitter.com/"><svg
               width="20"
               height="17"
               viewBox="0 0 20 17"
@@ -34,7 +37,7 @@ export default function index() {
                 d="M20 0.00932958C19.1294 0.6234 18.1656 1.09307 17.1455 1.40024C16.024 0.110728 14.2167 -0.341476 12.6201 0.267924C11.0234 0.877323 9.97709 2.41869 10 4.12751V5.0366C6.75515 5.12074 3.68366 3.57476 1.81818 0.91842C1.81818 0.91842 -1.81818 9.10024 6.36364 12.7366C4.49139 14.0075 2.26105 14.6447 0 14.5548C8.18182 19.1002 18.1818 14.5548 18.1818 4.10024C18.181 3.84701 18.1566 3.59442 18.1091 3.34569C19.0369 2.43069 19.6917 1.27543 20 0.00932958Z"
                 fill="white"
               />
-            </svg>
+            </svg></a>
           </div>
 
           <p>MITRAVEL</p>
@@ -82,7 +85,26 @@ export default function index() {
           />
         </svg>
 
+
+
+
+
+
+
+       <div className="videoDiv">
+       <video  src={`${Video}`} type="video/mp4"  loop   >
+        </video>
+
+      <button  classname="svgHeaderVideoPlay">  <svg   width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1L33 21.5714L1 42.1429V1V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+       </div>
+        
+
         <div className="videoSlider">
+
+          
           <svg
             width="16"
             height="16"
