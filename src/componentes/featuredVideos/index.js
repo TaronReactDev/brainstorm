@@ -1,14 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
-import img1 from "./video/Mask Group (7).jpg"
-import img2 from "./video/greece-1920x1080 1.jpg"
-import img3 from "./video/Mask Group (8).jpg"
-// import Video1 from "./video/1.mp4";
-// import Video2 from "./video/2.mp4";
-// import Video3 from "./video/3.mp4";
-// import Video4 from "./video/4.mp4";
+import VideoSlider from "./VideoSlider";
 
-export default function index() {
+import img1 from "./video/1.mp4";
+import img2 from "./video/2.mp4";
+import img3 from "./video/3.mp4";
+export default function Index() {
+
+const [img, setImg] = useState([{
+  id: 1,
+  img: img1,
+  isActiv: false,
+},
+{
+  id: 2,
+  img: img2,
+  isActiv: true,
+},
+{
+  id: 3,
+  img: img3,
+  isActiv: false,
+}])
+
+
+
+
+  
+
+  const videoClicHandeler = (id) => {
+    let newImg = img.map((el) => {
+      el.id === id ? (el.isActiv = true) : (el.isActiv = false);
+  
+      return el;
+    });
+    setImg(newImg)
+    
+  };
+
+
+  const ImgArr = img.map((el) => {
+    return <VideoSlider el={el} videoClicHandeler={videoClicHandeler} />;
+  });
+
   return (
     <div className="featuredVideosContainer">
       <div className="sectionForText">
@@ -19,12 +53,7 @@ export default function index() {
           most magnificent & awe inspiring.
         </p>
       </div>
-      <div className="sectionForVideos">
-          <img alt="" src={`${img1}`}></img>
-          <img alt="" src={`${img2}`}></img>
-          <img  alt="" src={`${img3}`}></img>
-         
-      </div>
+      <div className="sectionForVideos">{ImgArr}</div>
     </div>
   );
 }

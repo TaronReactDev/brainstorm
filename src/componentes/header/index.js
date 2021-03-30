@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState,useRef} from "react";
 import "./style.scss";
 import Video from "./video/ex.mp4"
 
-export default function index() {
-  return (
+export default function Index() {
+  const [playOrPause, setPlayOrPause] =useState(false)
+  const ref = useRef(null)
+
+ const playeVideo =()=>{ playOrPause ? ref.current.pause():ref.current.play();
+
+setPlayOrPause(!playOrPause)}
+
+     return (
     <div className="headerContainer">
       <div className="div">
         <nav>
@@ -92,10 +99,10 @@ export default function index() {
 
 
        <div className="videoDiv">
-       <video  src={`${Video}`} type="video/mp4"  loop   >
+       <video ref={ref} src={`${Video}`} type="video/mp4"  loop   >
         </video>
 
-      <button  classname="svgHeaderVideoPlay">  <svg   width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button onClick={ playeVideo} >  <svg   width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1L33 21.5714L1 42.1429V1V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </button>

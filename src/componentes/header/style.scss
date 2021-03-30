@@ -78,6 +78,7 @@
       bottom: 0;
       height: 115px;
       width: 1066px;
+      padding-left:56px ;
     }
     input::placeholder {
       font-family: SFProDisplay;
@@ -88,11 +89,7 @@
       color: #1c2e3d;
       height: 16px;
       width: 99px;
-      position: absolute;
-
-      left: 56px;
-      top: 47px;
-    }
+         }
   }
 }
 nav {
@@ -151,21 +148,25 @@ nav {
   right: 0;
 }
 
-.videoDiv{
-   position: absolute;
-  bottom: 120px;
+.videoDiv {
+  position: absolute;
+  bottom: 116px;
   right: -1px;
+  button {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+  }
 }
 video {
- 
   margin: 0;
   padding: 0;
   width: 503px;
   height: 282px;
-  border-radius: 8px 8px 0 0; 
+  border-radius: 8px 8px 0 0;
 }
 
-.svgHeaderVideoPlay{
-position: absolute;
-left: 5px;
-}
