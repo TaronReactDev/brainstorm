@@ -6,38 +6,32 @@ import img1 from "./video/1.mp4";
 import img2 from "./video/2.mp4";
 import img3 from "./video/3.mp4";
 export default function Index() {
-
-const [img, setImg] = useState([{
-  id: 1,
-  img: img1,
-  isActiv: false,
-},
-{
-  id: 2,
-  img: img2,
-  isActiv: true,
-},
-{
-  id: 3,
-  img: img3,
-  isActiv: false,
-}])
-
-
-
-
-  
+  const [img, setImg] = useState([
+    {
+      id: 1,
+      img: img1,
+      isActiv: false,
+    },
+    {
+      id: 2,
+      img: img2,
+      isActiv: true,
+    },
+    {
+      id: 3,
+      img: img3,
+      isActiv: false,
+    },
+  ]);
 
   const videoClicHandeler = (id) => {
     let newImg = img.map((el) => {
       el.id === id ? (el.isActiv = true) : (el.isActiv = false);
-  
+
       return el;
     });
-    setImg(newImg)
-    
+    setImg(newImg);
   };
-
 
   const ImgArr = img.map((el) => {
     return <VideoSlider el={el} videoClicHandeler={videoClicHandeler} />;

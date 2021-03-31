@@ -1,6 +1,6 @@
 import React,{useState,useRef} from "react";
 import "./style.scss";
-import Video from "./video/ex.mp4"
+import Video from "./video/1.mp4"
 
 export default function Index() {
   const [playOrPause, setPlayOrPause] =useState(false)
@@ -53,7 +53,7 @@ setPlayOrPause(!playOrPause)}
             <div className="burgerMenuItem"></div>
           </div>
         </nav>
-        <p className="newBook">NEW BOOK</p>
+       <button> <p className="newBook">NEW BOOK</p></button>
         <h1>Mother Earth Hosts Our Travels</h1>
 
         <p className="headerText">
@@ -102,9 +102,13 @@ setPlayOrPause(!playOrPause)}
        <video ref={ref} src={`${Video}`} type="video/mp4"  loop   >
         </video>
 
-      <button onClick={ playeVideo} >  <svg   width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button onClick={ playeVideo} >  
+    <svg   width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1L33 21.5714L1 42.1429V1V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+</svg> 
+
+
+
 </button>
        </div>
         
