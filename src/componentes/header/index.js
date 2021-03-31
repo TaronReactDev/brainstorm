@@ -53,7 +53,7 @@ setPlayOrPause(!playOrPause)}
             <div className="burgerMenuItem"></div>
           </div>
         </nav>
-       <button> <p className="newBook">NEW BOOK</p></button>
+       <p className="newBook">NEW BOOK</p>
         <h1>Mother Earth Hosts Our Travels</h1>
 
         <p className="headerText">
